@@ -9,7 +9,7 @@ from selenium import webdriver #connect python with webbrowser-chrome
 from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import NoSuchElementException     
 
-api = 'c703af3cf06e496aacf8143642ab2de5'
+api = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 def check_exists_by_xpath(driver, xpath):
     try:
         driver.find_element_by_xpath(xpath)
