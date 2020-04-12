@@ -9,7 +9,7 @@ from selenium import webdriver #connect python with webbrowser-chrome
 from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import NoSuchElementException     
 
-api = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+api = 'XXXXXXXXXXXXXXXXXXXXXXXXXX'
 def check_exists_by_xpath(driver, xpath):
     try:
         driver.find_element_by_xpath(xpath)
@@ -87,9 +87,9 @@ for url in urls:
 	
 	file.write("##### : " + url.replace('\n','') + " : #####"+ '\n')  
 
+	file.write("'LABEL' - 'TITULO' - 'CONFIDENCIA'"+ '\n')
 	for el in entidades_lista:
 		print(el)
-		file.write("'LABEL' - 'TITULO' - 'CONFIDENCIA'"+ '\n')
 		file.write(str(el).replace("[","").replace("]","") + '\n')
 
 file.close()
